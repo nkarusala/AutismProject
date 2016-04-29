@@ -23,6 +23,7 @@ file = open(fileName, "w")
 file.write("{")
 counter = 0
 exitFlag = 0
+#checking
 
 #subclass of Thread, pass in lock and queue of data
 class myThread (threading.Thread):
