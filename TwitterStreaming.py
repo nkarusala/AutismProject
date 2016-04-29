@@ -16,7 +16,7 @@ import json
 print "Opening new file to write to..."
 ts = time.time()
 st = datetime.datetime.fromtimestamp(ts).strftime('%H-%M-%S')
-fileName = "indiaTweets" + st + ".json"
+fileName = "usTweets" + st + ".json"
 file = open(fileName, "w")
 
 #initializing file, counter, and exitflag
@@ -111,10 +111,10 @@ def main():
     print "Setting up parameters..."
     #keywords = ["autism", "autistic", "developmental disorder", "child development"]
     #keywords = ["india"]
-    latUpper = 36
-    latLow = 8
-    lonLow = 70
-    lonUpper = 88
+    latUpper = 50
+    latLow = 25
+    lonLow = -124
+    lonUpper = -60
     result = None
 
     print "Creating qLock, workQ, and thread"
